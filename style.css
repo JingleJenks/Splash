@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden:
+  width: 100vmin;
 }
 #screen_welcome {
   width: 100vw;
@@ -122,7 +122,8 @@ body {
   height: 110%;
   animation: linear infinite;
   animation-name: run;
-  animation-duration: 3s;
+  animation-duration: 5s;
+  overflow-x: hidden;
 }
 .bottom_svgwave {
   width: 100%;
@@ -132,7 +133,7 @@ body {
   animation: linear infinite;
   animation-name: run;
   animation-duration: 5s;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes run {
