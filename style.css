@@ -177,10 +177,14 @@ body {
   height: 100vmin;
 }
 
-.hidden {
-  display: none;
-}
 .fullscreen {
   position: relative;
   overflow: hidden;
+}
+.depth_sizing {
+  width: 100vmin;
+  height: 10vmin;
+}
+.hidden {
+  display: none;
 }
