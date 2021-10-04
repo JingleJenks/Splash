@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  overflow: hidden:
 }
 #screen_welcome {
   width: 100vw;
@@ -119,12 +120,31 @@ body {
   width: 100%;
   position: absolute;
   height: 110%;
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 3s;
 }
 .bottom_svgwave {
   width: 100%;
   position: absolute;
   z-index: 9;
   transform: scaleX(-1);
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 5s;
+  overflow: hidden;
+}
+
+@-webkit-keyframes run {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 105%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /* .path-0 {
