@@ -1,0 +1,19 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#screen_welcome {
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  padding: 0;
+  margin: 0;
+}
+
+.waves {
+  width: 100vw;
+  height: 50vmin;
+  background-color: aquamarine;
+  object-fit: none;
+  object-position: 50% 50%;
+}
