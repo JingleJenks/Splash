@@ -5,15 +5,151 @@ body {
 #screen_welcome {
   width: 100vw;
   display: grid;
-  grid-template-rows: 2fr 2fr;
+  grid-template-rows: 2fr 0.5fr 2fr;
   padding: 0;
   margin: 0;
+  height: 100vmin;
+}
+.tophalf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* waves */
 .waves {
-  width: 100vw;
-  height: 50vmin;
-  background-color: aquamarine;
-  object-fit: none;
-  object-position: 50% 50%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.curve1a {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  margin-top: 5vh;
+}
+
+.curve2a {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #3c31dd;
+  z-index: -10;
+  margin-top: 5vh;
+}
+
+.curve1b {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  margin-top: 5vh;
+}
+
+.curve2b {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #3c31dd;
+  z-index: -10;
+  margin-top: 5vh;
+}
+.curve1c {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  margin-top: 5vh;
+}
+
+.curve2c {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #3c31dd;
+  z-index: -10;
+  margin-top: 5vh;
+}
+.curve1d {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  margin-top: 5vh;
+}
+
+.curve2d {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #3c31dd;
+  z-index: -10;
+  margin-top: 5vh;
+}
+.curve1e {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  margin-top: 5vh;
+}
+
+.curve2e {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #3c31dd;
+  z-index: -10;
+  margin-top: 5vh;
+}
+.curve1f {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  margin-top: 5vh;
+}
+
+.curve2f {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #3c31dd;
+  z-index: -10;
+  margin-top: 5vh;
+}
+.curve1g {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  margin-top: 5vh;
+}
+
+.curve2g {
+  border-radius: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #3c31dd;
+  z-index: -10;
+  margin-top: 5vh;
+}
+/*  */
+
+.ocean {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  background: #3c31dd;
 }
