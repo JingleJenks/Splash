@@ -220,6 +220,7 @@ body {
 @keyframes freediver {
   0% {
     transform: translate(0, 0);
+    scale: 0.6;
   }
   /* 50% {
     transform: translate(0, 10vh);
@@ -227,6 +228,7 @@ body {
 
   100% {
     transform: translate(0, 20vh);
+    scale: 1;
   }
 }
 
