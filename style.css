@@ -196,6 +196,9 @@ body {
 .freediver {
   height: 80%;
   width: auto;
+}
+
+.ani_freediver {
   animation: freediver ease-in forwards;
   animation-duration: 5s;
   animation-iteration-count: 1;
