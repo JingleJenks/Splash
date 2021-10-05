@@ -1,20 +1,23 @@
+//FREEDIVER SCROLL ANIMATION 
 const observer = new IntersectionObserver(entries => {
     // Loop over the entries
-    console.log("1");
     entries.forEach(entry => {
-        // If the element is visible
-        console.log("2");
+        const freediver = entry.target.querySelector('.freediver');
 
         if (entry.isIntersecting) {
             // Add the animation class
-            entry.target.classList.add('ani_freediver');
+            freediver.classList.add('ani_freediver');
+            return; //if we added the class, end of function 
         }
+        //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
+        freediver.classList.remove('ani_freediver')
     });
-    console.log("3");
 
 });
 
-observer.observe(document.querySelector('.freediver'));
+observer.observe(document.querySelector('.freediver-wrapper'));
+
+//DIVER SCROLL ANIMATION 
 
 // window.addEventListener("load", loadWelcome);
 

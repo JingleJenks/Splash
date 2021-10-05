@@ -188,7 +188,7 @@ body {
 .depth_sizing {
   width: 100vw;
   height: 10vmin;
-  border: white solid 2px;
+  /* border: white solid 2px; */
   margin-bottom: 2vw;
   color: white;
   font-size: 3vw;
@@ -206,7 +206,7 @@ body {
 
 .ani_freediver {
   animation: freediver ease-in 0.5s forwards;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
 }
 
