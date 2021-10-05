@@ -196,7 +196,7 @@ body {
 .hidden {
   display: none;
 }
-.freediver {
+.freediver-wrapper {
   width: max-content;
   position: relative;
   float: right;
