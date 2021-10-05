@@ -196,16 +196,23 @@ body {
 .hidden {
   display: none;
 }
+.rope {
+  width: 0.5vw;
+  height: 120vw;
+  background-color: rgb(211, 211, 211);
+  float: right;
+  margin-right: 5vw;
+}
 .freediver-wrapper {
   width: max-content;
   position: relative;
   float: right;
-  padding-right: 5vw;
+  transform: scaleX(-1); /* padding-right: 5vw; */
   /* top: -50vh; */
 }
 
 .ani_freediver {
-  animation: freediver ease-in 0.5s forwards;
+  animation: freediver forwards;
   animation-duration: 5s;
   animation-iteration-count: 1;
 }
@@ -214,12 +221,12 @@ body {
   0% {
     transform: translate(0, 0);
   }
-  50% {
-    transform: translate(0, 60vh);
-  }
+  /* 50% {
+    transform: translate(0, 10vh);
+  } */
 
   100% {
-    transform: translate(0, 150vh);
+    transform: translate(0, 20vh);
   }
 }
 
