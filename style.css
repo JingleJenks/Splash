@@ -1,4 +1,7 @@
 /* VARIABLES */
+* {
+  box-sizing: border-box;
+}
 :root {
   --topblue: #0693e3ff;
   --bottomblue: #8ed1fcff;
