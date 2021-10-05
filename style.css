@@ -194,13 +194,16 @@ body {
   display: none;
 }
 .freediver {
-  height: 80%;
-  width: auto;
+  width: max-content;
+  position: relative;
+  float: right;
+  padding-right: 5vw;
+  /* top: -50vh; */
 }
 
 .ani_freediver {
-  animation: freediver ease-in forwards;
-  animation-duration: 5s;
+  animation: freediver ease-in 0.5s forwards;
+  animation-duration: 10s;
   animation-iteration-count: 1;
 }
 
@@ -209,10 +212,15 @@ body {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(0, 40vh);
+    transform: translate(0, 60vh);
   }
 
   100% {
-    transform: translate(0, 120vh);
+    transform: translate(0, 150vh);
   }
+}
+
+.freediver img {
+  height: 35vh;
+  width: auto;
 }
