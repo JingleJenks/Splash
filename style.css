@@ -260,29 +260,48 @@ body {
   height: 35vh;
   width: auto;
 }
+
 /* SPERM */
 .sperm-wrapper {
   width: max-content;
   position: relative;
+  margin-left: 30vw;
 }
 .sperm {
   display: flex;
   flex-direction: row;
 }
 .ani_sperm {
-  animation: sperm forwards;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
+  animation: sperm infinite;
+  animation-duration: 10s;
+  /* animation-iteration-count: 1; */
 }
 
 @keyframes sperm {
   0% {
     transform: translateY(0);
-    scale: 0.6;
-  }
-  100% {
-    transform: translateY(20vh);
     scale: 1;
+  }
+  20% {
+    transform: translateY(-5vh);
+    scale: 1.1;
+  }
+  40% {
+    transform: translateY(0);
+    scale: 1;
+  }
+  60% {
+    transform: translateY(-5vh);
+    scale: 1.1;
+  }
+  80% {
+    transform: translateY(0);
+    scale: 1;
+  }
+
+  100% {
+    transform: translateY(-5vh);
+    scale: 1.1;
   }
 }
 
@@ -292,6 +311,7 @@ body {
 }
 .sperm img:nth-child(2) {
   height: 25vh;
+  margin-top: 5vh;
   width: auto;
   transform: scaleX(-1);
 }
