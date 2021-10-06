@@ -203,6 +203,43 @@ body {
   float: right;
   margin-right: 5vw;
 }
+
+/* DIVER */
+.diver-wrapper {
+  width: max-content;
+  position: relative;
+  float: right;
+  transform: scaleX(-1); /* padding-right: 5vw; */
+  /* top: -50vh; */
+}
+
+.ani_freediver {
+  animation: diver forwards;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes diver {
+  0% {
+    transform: translate(0, 0);
+    scale: 0.6;
+  }
+  /* 50% {
+      transform: translate(0, 10vh);
+    } */
+
+  100% {
+    transform: translate(0, 20vh);
+    scale: 1;
+  }
+}
+
+.diver img {
+  height: 35vh;
+  width: auto;
+}
+/* FREEDVIER */
+
 .freediver-wrapper {
   width: max-content;
   position: relative;
