@@ -212,7 +212,7 @@ body {
 }
 
 .ani_diver {
-  animation: diver forwards;
+  animation: diver forwards ease-out;
   animation-duration: 5s;
   animation-iteration-count: 1;
 }
@@ -248,11 +248,11 @@ body {
 
 @keyframes freediver {
   0% {
-    transform: translate(0, 0);
+    transform: translateY(0);
     scale: 0.6;
   }
   100% {
-    transform: translate(0, 20vh);
+    transform: translateY(20vh);
     scale: 1;
   }
 }
