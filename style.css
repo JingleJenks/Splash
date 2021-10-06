@@ -236,8 +236,7 @@ body {
   width: max-content;
   position: relative;
   float: right;
-  transform: scaleX(-1); /* padding-right: 5vw; */
-  /* top: -50vh; */
+  transform: scaleX(-1);
 }
 
 .ani_freediver {
@@ -260,4 +259,39 @@ body {
 .freediver img {
   height: 35vh;
   width: auto;
+}
+/* SPERM */
+.sperm-wrapper {
+  width: max-content;
+  position: relative;
+}
+.sperm {
+  display: flex;
+  flex-direction: row;
+}
+.ani_sperm {
+  animation: sperm forwards;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes sperm {
+  0% {
+    transform: translateY(0);
+    scale: 0.6;
+  }
+  100% {
+    transform: translateY(20vh);
+    scale: 1;
+  }
+}
+
+.sperm img:nth-child(1) {
+  height: 35vh;
+  width: auto;
+}
+.sperm img:nth-child(2) {
+  height: 25vh;
+  width: auto;
+  transform: scaleX(-1);
 }
