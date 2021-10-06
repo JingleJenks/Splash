@@ -219,7 +219,7 @@ body {
 
 @keyframes diver {
   0% {
-    transform: translatex(0vw);
+    transform: translatex(20vw);
   }
   100% {
     transform: translateX(-20vw);
