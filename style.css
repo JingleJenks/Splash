@@ -213,13 +213,13 @@ body {
 
 .ani_diver {
   animation: diver forwards ease-out;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
 }
 
 @keyframes diver {
   0% {
-    transform: translatex(20vw);
+    transform: translatex(0vw);
   }
   100% {
     transform: translateX(-20vw);
@@ -232,32 +232,33 @@ body {
 }
 /* FREEDVIER */
 
-.freediver-wrapper {
+.free-wrapper {
   width: max-content;
   position: relative;
   float: right;
-  transform: scaleX(-1);
 }
 
 .ani_freediver {
-  animation: freediver forwards;
+  animation: freediver;
   animation-duration: 5s;
-  animation-iteration-count: 1;
+  transform-origin: bottom center;
+  transform-style: preserve-3D;
+  /* animation-iteration-count: 1; */
 }
 
 @keyframes freediver {
   0% {
-    transform: translateY(0);
-    scale: 0.6;
+    transform: translateY(-20vh);
   }
   100% {
-    transform: translateY(20vh);
-    scale: 1;
+    transform: translateY(12vh);
   }
 }
 
 .freediver img {
   height: 35vh;
+  float: right;
+  transform: scaleX(-1);
   width: auto;
 }
 
@@ -272,8 +273,8 @@ body {
   flex-direction: row;
 }
 .ani_sperm {
-  animation: sperm infinite;
-  animation-duration: 10s;
+  animation: sperm infinite ease-in-out;
+  animation-duration: 6s;
   /* animation-iteration-count: 1; */
 }
 
@@ -283,7 +284,7 @@ body {
     scale: 1;
   }
   20% {
-    transform: translateY(-5vh);
+    transform: translateY(-3vh);
     scale: 1.1;
   }
   40% {
@@ -291,7 +292,7 @@ body {
     scale: 1;
   }
   60% {
-    transform: translateY(-5vh);
+    transform: translateY(-3vh);
     scale: 1.1;
   }
   80% {
@@ -300,7 +301,7 @@ body {
   }
 
   100% {
-    transform: translateY(-5vh);
+    transform: translateY(-3vh);
     scale: 1.1;
   }
 }
@@ -368,7 +369,7 @@ body {
   }
   33% {
     opacity: 1;
-    transform: translateY();
+    transform: translateY(30px);
   }
   67% {
     opacity: 1;
