@@ -269,27 +269,89 @@ body {
 }
 
 .ani_squid {
-  animation: squid;
+  animation: squid ease-out forwards;
+  animation-duration: 10s;
+  transform-origin: right center;
+  animation-iteration-count: 2;
+}
+@keyframes squid {
+  0%,
+  100% {
+    transform: translatex(-10vw) rotate(90deg) scale(1);
+    filter: invert(100%) sepia(95%) saturate(412%) hue-rotate(301deg)
+      brightness(111%) contrast(87%);
+  }
+  20% {
+    transform: translatex(-5vw) rotate(90deg) scale(1.2);
+    filter: invert(87%) sepia(22%) saturate(275%) hue-rotate(158deg)
+      brightness(100%) contrast(91%);
+  }
+  30% {
+    transform: translatex(0vw) rotate(45deg) scale(1);
+    filter: invert(99%) sepia(14%) saturate(6817%) hue-rotate(177deg)
+      brightness(101%) contrast(92%);
+  }
+  40% {
+    transform: translatex(0vw) rotate(0deg) scale(1);
+    filter: invert(99%) sepia(14%) saturate(6817%) hue-rotate(177deg)
+      brightness(101%) contrast(92%);
+  }
+  50% {
+    transform: translatex(0vw) rotate(-45deg) scale(1);
+    filter: invert(99%) sepia(14%) saturate(6817%) hue-rotate(177deg)
+      brightness(101%) contrast(92%);
+  }
+  60% {
+    transform: translatex(-5vw) rotate(-90deg) scale(1.2);
+    filter: invert(87%) sepia(22%) saturate(275%) hue-rotate(158deg)
+      brightness(100%) contrast(91%);
+  }
+  70% {
+    transform: translatex(-5vw) rotate(-45deg) scale(1.2);
+    filter: invert(87%) sepia(22%) saturate(275%) hue-rotate(158deg)
+      brightness(100%) contrast(91%);
+  }
+  80% {
+    transform: translateX(-10vw) rotate(0deg) scale(1);
+    filter: invert(99%) sepia(14%) saturate(6817%) hue-rotate(177deg)
+      brightness(101%) contrast(92%);
+  }
+}
+.squid img {
+  height: 15vh;
+  width: auto;
+  margin-left: 30vw;
+  transform: rotate (45deg);
+}
+/* ANGLER */
+.angler-wrapper {
+  width: max-content;
+  position: relative;
+  margin-left: 20vw;
+}
+
+.ani_angler {
+  animation: angler;
   animation-duration: 5s;
+  transform-origin: bottom center;
+  transform-style: preserve-3D;
   /* animation-iteration-count: 1; */
 }
 
-@keyframes squid {
+@keyframes angler {
   0% {
-    transform: translateY(-20vh);
+    transform: translatex(-20vh);
   }
   100% {
-    transform: translateY(12vh);
+    transform: translatex(12vh);
   }
 }
 
-.squid img {
-  height: 25vh;
-  transform: rotate(45deg);
-  width: auto;
-  margin-left: 30vw;
+.angler img {
+  width: 15vw;
+  float: right;
+  height: auto;
 }
-
 /* SPERM */
 .sperm-wrapper {
   width: max-content;
