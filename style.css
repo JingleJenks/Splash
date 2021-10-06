@@ -30,7 +30,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+h1 {
+  font-family: loos-wide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.2vw;
+}
 .ocean {
   position: relative;
   display: flex;
@@ -38,6 +43,12 @@ body {
   align-items: center;
   min-height: 400px;
   background: #3c31dd;
+}
+a {
+  font-family: loos-wide, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 /* chervon arrow */
 .container {
@@ -111,10 +122,8 @@ body {
 .text {
   margin-top: 75px;
   text-align: center;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 12px;
   color: #fff;
-
+  text-decoration-line: none;
   animation: pulse 2s linear alternate infinite;
 }
 
@@ -195,6 +204,9 @@ body {
 }
 .hidden {
   display: none;
+}
+.zero {
+  margin-top: 0px;
 }
 .rope {
   width: 0.5vw;
@@ -323,11 +335,13 @@ body {
   margin-left: 30vw;
   transform: rotate (45deg);
 }
+
 /* ANGLER */
 .angler-wrapper {
   width: max-content;
   position: relative;
   margin-left: 20vw;
+  display: flex;
 }
 
 .ani_angler {
@@ -340,18 +354,62 @@ body {
 
 @keyframes angler {
   0% {
-    transform: translatex(-20vh);
+    transform: translatex(0vw);
   }
   100% {
-    transform: translatex(12vh);
+    transform: translatex(12vw);
   }
 }
 
-.angler img {
+.anglerimg {
   width: 15vw;
-  float: right;
   height: auto;
 }
+.angler_light {
+  position: absolute;
+  transform: scaleX(-1);
+  height: 2vw;
+  right: 0vw;
+  filter: invert(82%) sepia(84%) saturate(490%) hue-rotate(7deg)
+    brightness(106%) contrast(91%);
+}
+
+.ani_light {
+  animation: light ease-in-out;
+  animation-duration: 4s;
+  transform-origin: bottom center;
+  transform-style: preserve-3D;
+}
+
+@keyframes light {
+  0%,
+  100% {
+    filter: invert(82%) sepia(84%) saturate(490%) hue-rotate(7deg)
+      brightness(106%) contrast(91%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transform: scale(0.9);
+  }
+  20% {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(197deg)
+      brightness(105%) contrast(101%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transform: scale(1.1);
+  }
+  40% {
+    filter: invert(82%) sepia(84%) saturate(490%) hue-rotate(7deg)
+      brightness(106%) contrast(91%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transform: scale(0.9);
+  }
+  60% {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(197deg)
+      brightness(105%) contrast(101%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transform: scale(1.1);
+  }
+  80% {
+    filter: invert(82%) sepia(84%) saturate(490%) hue-rotate(7deg)
+      brightness(106%) contrast(91%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transform: scale(0.9);
+  }
+}
+
 /* SPERM */
 .sperm-wrapper {
   width: max-content;

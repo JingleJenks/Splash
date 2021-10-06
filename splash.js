@@ -64,19 +64,24 @@ const observer850 = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
 
-        const squid = entry.target.querySelector('.angler');
+        const angler = entry.target.querySelector('.angler');
+        const light = entry.target.querySelector('.angler_light');
 
         if (entry.isIntersecting) {
             // Add the animation class
-            squid.classList.add('ani_angler');
+            angler.classList.add('ani_angler');
+            light.classList.add('ani_light');
+
             return; //if we added the class, end of function 
         }
         //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
-        squid.classList.remove('ani_angler')
+        angler.classList.remove('ani_angler')
+        light.classList.remove('ani_light')
+
     });
 
 });
-observer950.observe(document.querySelector('.angler-wrapper'));
+observer850.observe(document.querySelector('.angler-wrapper'));
 
 
 //SPERM SCROLL ANIMATION 
