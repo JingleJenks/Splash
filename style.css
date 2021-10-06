@@ -209,8 +209,8 @@ a {
   margin-top: 0px;
 }
 .rope {
-  width: 0.5vw;
-  height: 120vw;
+  width: 0.2vw;
+  height: 132vw;
   background-color: rgb(211, 211, 211);
   float: right;
   margin-right: 5vw;
@@ -254,7 +254,7 @@ a {
     transform: translatex(-10vw);
   }
   100% {
-    transform: translateX(20vw);
+    transform: translateX(15vw);
   }
 }
 
@@ -280,10 +280,10 @@ a {
 
 @keyframes freediver {
   0% {
-    transform: translateY(-20vh);
+    transform: translateY(-40vh);
   }
   100% {
-    transform: translateY(12vh);
+    transform: translateY(0vh);
   }
 }
 
@@ -352,8 +352,26 @@ a {
 .squid img {
   height: 15vh;
   width: auto;
-  margin-left: 30vw;
+  margin-left: 35vw;
   transform: rotate (45deg);
+}
+.ani_boxsquid {
+  animation: boxsquid ease-out forwards;
+  animation-duration: 3s;
+  transform-origin: right center;
+  margin-left: 20vw;
+}
+@keyframes boxsquid {
+  0% {
+    /* transform: scale(0); */
+    opacity: 0;
+    transform: translatey(-5vh);
+  }
+  100% {
+    /* transform: scale(1); */
+    opacity: 1;
+    transform: translatey(0vh);
+  }
 }
 
 /* ANGLER */

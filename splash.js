@@ -53,10 +53,32 @@ const observer400 = new IntersectionObserver(entries => {
         }
         //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
         squid.classList.remove('ani_squid')
+
     });
 
 });
 observer400.observe(document.querySelector('.squid-wrapper'));
+
+
+//SQUID TEXT SCROLL ANIMATION 
+const observer410 = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+
+        const boxsquid = entry.target.querySelector('.boxsquid');
+
+        if (entry.isIntersecting) {
+            // Add the animation class
+            boxsquid.classList.add('ani_boxsquid');
+            return; //if we added the class, end of function 
+        }
+        //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
+        boxsquid.classList.remove('ani_boxsquid')
+
+    });
+
+});
+observer410.observe(document.querySelector('.boxsquid_wrapper'));
 
 
 //ANGLER SCROLL ANIMATION 
