@@ -232,7 +232,7 @@ body {
 }
 /* FREEDVIER */
 
-.free-wrapper {
+.freediver-wrapper {
   width: max-content;
   position: relative;
   float: right;
@@ -260,6 +260,34 @@ body {
   float: right;
   transform: scaleX(-1);
   width: auto;
+}
+/* SQUID */
+
+.squid-wrapper {
+  width: max-content;
+  position: relative;
+}
+
+.ani_squid {
+  animation: squid;
+  animation-duration: 5s;
+  /* animation-iteration-count: 1; */
+}
+
+@keyframes squid {
+  0% {
+    transform: translateY(-20vh);
+  }
+  100% {
+    transform: translateY(12vh);
+  }
+}
+
+.squid img {
+  height: 25vh;
+  transform: rotate(45deg);
+  width: auto;
+  margin-left: 30vw;
 }
 
 /* SPERM */
