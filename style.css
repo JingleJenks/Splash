@@ -215,12 +215,32 @@ a {
   float: right;
   margin-right: 5vw;
 }
-
+.textbox {
+  padding: 2vw;
+  padding-bottom: unset;
+  height: auto;
+  width: 20vw;
+  text-align: left;
+  /* border: white solid 2px; */
+}
+.textbox h2 {
+  font-family: loos-wide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.textbox p {
+  font-family: loos-wide, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 /* DIVER */
 .diver-wrapper {
   width: max-content;
   position: relative;
-  transform: scaleX(-1);
 }
 
 .ani_diver {
@@ -231,10 +251,10 @@ a {
 
 @keyframes diver {
   0% {
-    transform: translatex(0vw);
+    transform: translatex(-10vw);
   }
   100% {
-    transform: translateX(-20vw);
+    transform: translateX(20vw);
   }
 }
 
