@@ -208,12 +208,10 @@ body {
 .diver-wrapper {
   width: max-content;
   position: relative;
-  float: right;
-  transform: scaleX(-1); /* padding-right: 5vw; */
-  /* top: -50vh; */
+  transform: scaleX(-1);
 }
 
-.ani_freediver {
+.ani_diver {
   animation: diver forwards;
   animation-duration: 5s;
   animation-iteration-count: 1;
@@ -221,21 +219,15 @@ body {
 
 @keyframes diver {
   0% {
-    transform: translate(0, 0);
-    scale: 0.6;
+    transform: translatex(0vw);
   }
-  /* 50% {
-      transform: translate(0, 10vh);
-    } */
-
   100% {
-    transform: translate(0, 20vh);
-    scale: 1;
+    transform: translateX(-20vw);
   }
 }
 
 .diver img {
-  height: 35vh;
+  height: 10vh;
   width: auto;
 }
 /* FREEDVIER */
@@ -259,10 +251,6 @@ body {
     transform: translate(0, 0);
     scale: 0.6;
   }
-  /* 50% {
-    transform: translate(0, 10vh);
-  } */
-
   100% {
     transform: translate(0, 20vh);
     scale: 1;
