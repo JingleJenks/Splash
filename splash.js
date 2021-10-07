@@ -165,7 +165,9 @@ const observer860 = new IntersectionObserver(entries => {
 });
 observer860.observe(document.querySelector('.boxangler_wrapper'));
 
-const observer3000 = new IntersectionObserver(entries => {
+
+// TWILIGHT TITLE
+const observertitle1 = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
         const h3 = entry.target.querySelector('.title');
@@ -176,9 +178,43 @@ const observer3000 = new IntersectionObserver(entries => {
             return; //if we added the class, end of function 
         }
         //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
-        squid.classList.remove('ani_h3')
-
+        h3.classList.remove('ani_h3')
     });
-
 });
-observer3000.observe(document.querySelector('.h3_wrapper'));
+observertitle1.observe(document.querySelector('.h3_wrapper1'));
+
+
+// MIDNIGHT TITLE
+const observertitle2 = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+        const h3 = entry.target.querySelector('.title');
+
+        if (entry.isIntersecting) {
+            // Add the animation class
+            h3.classList.add('ani_h3');
+            return; //if we added the class, end of function 
+        }
+        //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
+        h3.classList.remove('ani_h3')
+    });
+});
+observertitle2.observe(document.querySelector('.h3_wrapper2'));
+
+
+// ABYSS TITLE
+const observertitle3 = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+        const h3 = entry.target.querySelector('.title');
+
+        if (entry.isIntersecting) {
+            // Add the animation class
+            h3.classList.add('ani_h3');
+            return; //if we added the class, end of function 
+        }
+        //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
+        h3.classList.remove('ani_h3')
+    });
+});
+observertitle3.observe(document.querySelector('.h3_wrapper3'));

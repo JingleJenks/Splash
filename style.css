@@ -637,12 +637,15 @@ h3 {
   font-style: normal;
   text-align: center;
   animation-name: h3;
+  position: absolute;
+  margin: auto;
+  opacity: 0;
 }
 .ani_h3 {
   animation: title ease-out forwards;
   animation-duration: 2s;
   transform-origin: center;
-  animation-iteration-count: 1;
+  animation-delay: 1s;
 }
 @keyframes title {
   0% {
