@@ -630,3 +630,32 @@ p {
     color: rgb(253, 253, 0);
   }
 }
+
+h3 {
+  font-family: loos-wide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  animation-name: h3;
+}
+.ani_h3 {
+  animation: title ease-out forwards;
+  animation-duration: 2s;
+  transform-origin: center;
+  animation-iteration-count: 1;
+}
+@keyframes title {
+  0% {
+    font-size: 2vw;
+    opacity: 0.2;
+  }
+  50% {
+    font-size: 2.2vw;
+    opacity: 0.6;
+  }
+
+  100% {
+    font-size: 3vw;
+    opacity: 1;
+  }
+}
