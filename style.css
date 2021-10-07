@@ -242,16 +242,16 @@ p {
   line-height: 2rem;
 }
 /* COUNTER */
-#counter {
+.counter {
   width: 20vmin;
   height: 10vmin;
   border: white solid 2px;
   position: fixed;
-  top: 20 vh;
+  top: 20vh;
   left: 0;
   font-size: 2rem;
 }
-#counter h3 {
+.counter h3 {
   opacity: 1;
 }
 /* SPERM */
@@ -707,4 +707,29 @@ h3 {
     font-size: 3vw;
     opacity: 1;
   }
+}
+.bloc {
+  position: relative;
+  width: 500px;
+  padding: 1em;
+  margin: 2em auto;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+.line span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: orangered;
 }
