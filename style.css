@@ -542,10 +542,13 @@ p {
   transform-origin: bottom center;
   transform-style: preserve-3D;
 }
-
+.angler {
+  display: flex;
+  justify-content: flex-end;
+}
 @keyframes angler {
   0% {
-    transform: translatex(0vw);
+    transform: translatex(-10vw);
   }
   100% {
     transform: translatex(12vw);
@@ -556,17 +559,17 @@ p {
   width: 15vw;
   height: auto;
 }
-.angler_light {
-  position: absolute;
-  transform: scaleX(-1);
-  height: 2vw;
-  right: 0vw;
-  filter: invert(82%) sepia(84%) saturate(490%) hue-rotate(7deg)
-    brightness(106%) contrast(91%);
-}
 
+.angler_light {
+  background-color: yellow;
+  z-index: 10;
+  width: 3vmin;
+  height: 3vmin;
+  position: absolute;
+  border-radius: 50% 50%;
+}
 .ani_light {
-  animation: light ease-in-out;
+  animation: light ease-in-out infinite;
   animation-duration: 4s;
   transform-origin: bottom center;
   transform-style: preserve-3D;
@@ -575,29 +578,22 @@ p {
 @keyframes light {
   0%,
   100% {
-    filter: invert(82%) sepia(84%) saturate(490%) hue-rotate(7deg)
-      brightness(106%) contrast(91%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    background-color: rgb(226, 245, 157);
     transform: scale(0.9);
   }
-  20% {
-    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(197deg)
-      brightness(105%) contrast(101%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-    transform: scale(1.1);
+  25% {
+    background-color: yellow;
+    transform: scale(1);
+    box-shadow: 2px 2px 8px #e6ff33;
   }
-  40% {
-    filter: invert(82%) sepia(84%) saturate(490%) hue-rotate(7deg)
-      brightness(106%) contrast(91%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  50% {
+    background-color: rgb(226, 245, 157);
     transform: scale(0.9);
   }
-  60% {
-    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(197deg)
-      brightness(105%) contrast(101%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-    transform: scale(1.1);
-  }
-  80% {
-    filter: invert(82%) sepia(84%) saturate(490%) hue-rotate(7deg)
-      brightness(106%) contrast(91%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-    transform: scale(0.9);
+  75% {
+    background-color: yellow;
+    transform: scale(1);
+    box-shadow: 2px 2px 8px #e6ff33;
   }
 }
 
@@ -610,9 +606,27 @@ p {
 
 @keyframes boxangler {
   0% {
-    transform: translateX(12vw);
+    transform: translateX(15vw);
   }
   100% {
     transform: translateX(0vw);
+  }
+}
+
+.boxangler span {
+  animation: bio infinite 2s;
+  animation-duration: 2s;
+  transform-origin: bottom center;
+  transform-style: preserve-3D;
+}
+
+@keyframes bio {
+  0%,
+  100% {
+    color: rgb(226, 245, 157);
+    text-shadow: 2px 2px 8px #e6ff33;
+  }
+  50% {
+    color: rgb(253, 253, 0);
   }
 }
