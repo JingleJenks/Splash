@@ -252,7 +252,7 @@ p {
 }
 .sperm-wrapper {
   position: relative;
-  margin-left: 20vw;
+  margin-left: 30vw;
 }
 .sperm {
   display: flex;
@@ -403,7 +403,7 @@ p {
     transform: translatex(-20vw);
   }
   100% {
-    transform: translateX(10vw);
+    transform: translateX(20vw);
   }
 }
 

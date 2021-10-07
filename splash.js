@@ -1,3 +1,43 @@
+//SPERM SCROLL ANIMATION 
+const observer20 = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+
+        const sperm = entry.target.querySelector('.sperm');
+
+        if (entry.isIntersecting) {
+            // Add the animation class
+            sperm.classList.add('ani_sperm');
+            return; //if we added the class, end of function 
+        }
+        //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
+        sperm.classList.remove('ani_sperm')
+    });
+
+});
+observer20.observe(document.querySelector('.sperm-wrapper'));
+
+//SPERM TEXT SCROLL ANIMATION 
+const observer21 = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+
+        const boxsperm = entry.target.querySelector('.boxsperm');
+
+        if (entry.isIntersecting) {
+            // Add the animation class
+            boxsperm.classList.add('ani_boxsperm');
+            return; //if we added the class, end of function 
+        }
+        //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
+        boxsperm.classList.remove('ani_boxsperm')
+
+    });
+
+});
+observer21.observe(document.querySelector('.boxsperm_wrapper'));
+
+
 // //DIVER SCROLL ANIMATION 
 const observer40 = new IntersectionObserver(entries => {
     // Loop over the entries
@@ -125,41 +165,20 @@ const observer860 = new IntersectionObserver(entries => {
 });
 observer860.observe(document.querySelector('.boxangler_wrapper'));
 
-//SPERM SCROLL ANIMATION 
-const observer20 = new IntersectionObserver(entries => {
+const observer3000 = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
-
-        const sperm = entry.target.querySelector('.sperm');
+        const h3 = entry.target.querySelector('.title');
 
         if (entry.isIntersecting) {
             // Add the animation class
-            sperm.classList.add('ani_sperm');
+            h3.classList.add('ani_h3');
             return; //if we added the class, end of function 
         }
         //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
-        sperm.classList.remove('ani_sperm')
-    });
-
-});
-observer20.observe(document.querySelector('.sperm-wrapper'));
-
-//SPERM TEXT SCROLL ANIMATION 
-const observer21 = new IntersectionObserver(entries => {
-    // Loop over the entries
-    entries.forEach(entry => {
-
-        const boxsperm = entry.target.querySelector('.boxsperm');
-
-        if (entry.isIntersecting) {
-            // Add the animation class
-            boxsperm.classList.add('ani_boxsperm');
-            return; //if we added the class, end of function 
-        }
-        //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
-        boxsperm.classList.remove('ani_boxsperm')
+        squid.classList.remove('ani_h3')
 
     });
 
 });
-observer21.observe(document.querySelector('.boxsperm_wrapper'));
+observer3000.observe(document.querySelector('.h3_wrapper'));
