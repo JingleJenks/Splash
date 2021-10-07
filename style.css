@@ -630,31 +630,32 @@ p {
     color: rgb(253, 253, 0);
   }
 }
-
+.h3_wrapper1 {
+  right: -12.5vw;
+  position: relative;
+}
 h3 {
   font-family: loos-wide, sans-serif;
   font-weight: 700;
   font-style: normal;
   text-align: center;
   animation-name: h3;
-  position: absolute;
-  margin: auto;
   opacity: 0;
 }
 .ani_h3 {
-  animation: title ease-out forwards;
+  animation: title linear forwards;
   animation-duration: 2s;
   transform-origin: center;
-  animation-delay: 1s;
+  animation-delay: 0.2s;
 }
 @keyframes title {
   0% {
     font-size: 2vw;
-    opacity: 0.2;
+    opacity: 0;
   }
   50% {
-    font-size: 2.2vw;
-    opacity: 0.6;
+    font-size: 2.5vw;
+    opacity: 0.5;
   }
 
   100% {
