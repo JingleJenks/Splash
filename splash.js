@@ -65,14 +65,18 @@ const observer120 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
 
         const freediver = entry.target.querySelector('.freediver');
+        const freediverbox = entry.target.querySelector('.freediver .textbox');
 
         if (entry.isIntersecting) {
             // Add the animation class
             freediver.classList.add('ani_freediver');
+            freediverbox.classList.add('ani_freediverbox');
             return; //if we added the class, end of function 
         }
         //once we are no more interesecting, remove the class so that is ready to be added again when in viewport again 
         freediver.classList.remove('ani_freediver')
+        freediverbox.classList.remove('ani_freediverbox');
+
     });
 
 });
