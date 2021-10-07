@@ -222,12 +222,10 @@ p {
   margin-right: 5vw;
 }
 .textbox {
-  padding: 2vw;
   padding-bottom: unset;
   height: auto;
   width: 20vw;
   text-align: left;
-  /* border: white solid 2px; */
 }
 .textbox h2 {
   font-family: loos-wide, sans-serif;
@@ -249,11 +247,12 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 .sperm-wrapper {
-  width: max-content;
   position: relative;
-  margin-left: 30vw;
+  margin-left: 20vw;
 }
 .sperm {
   display: flex;
@@ -266,29 +265,21 @@ p {
 }
 
 @keyframes sperm {
-  0% {
-    transform: translateY(0);
-    scale: 1;
-  }
-  20% {
-    transform: translateY(-3vh);
-    scale: 1.1;
-  }
-  40% {
-    transform: translateY(0);
-    scale: 1;
-  }
-  60% {
-    transform: translateY(-3vh);
-    scale: 1.1;
-  }
-  80% {
-    transform: translateY(0);
-    scale: 1;
-  }
-
+  0%,
   100% {
-    transform: translateY(-3vh);
+    transform: translateY(0);
+    scale: 1;
+  }
+  25% {
+    transform: translateY(-1vh);
+    scale: 1.1;
+  }
+  50% {
+    transform: translateY(0);
+    scale: 1;
+  }
+  75% {
+    transform: translateY(-1vh);
     scale: 1.1;
   }
 }
@@ -367,19 +358,31 @@ p {
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
+.boxsperm_wrapper {
+  position: relative;
+}
 .ani_boxsperm {
   animation: boxsperm ease-out forwards;
   animation-duration: 3s;
   transform-origin: right center;
-  margin-left: 20vw;
 }
 
 @keyframes boxsperm {
   0% {
-    transform: translateX(12vw);
+    transform: scale(0.4);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  75% {
+    transform: scale(0.9);
+    opacity: 0.9;
   }
   100% {
-    transform: translateX(0vw);
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
