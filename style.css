@@ -260,9 +260,9 @@ p {
   opacity: 0;
 }
 .ani_sperm {
-  animation: sperm infinite ease-in-out;
+  animation: sperm infinite ease-in-out forwards;
   animation-duration: 5s;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
   animation-iteration-count: 2;
 
   /* animation-iteration-count: 1; */
@@ -376,7 +376,7 @@ p {
   animation: boxsperm ease-out forwards;
   animation-duration: 3s;
   transform-origin: right center;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .boxsperm {
   opacity: 0;
@@ -410,22 +410,31 @@ p {
 .ani_diver {
   animation: diver forwards ease-out;
   animation-duration: 3s;
-  animation-delay: 0.5s;
+  /* animation-delay: 3s; */
   animation-iteration-count: 1;
 }
 
 @keyframes diver {
   0% {
     transform: translatex(-20vw);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.3;
   }
   100% {
     transform: translateX(40vw);
+    opacity: 1;
   }
 }
 
 .diver img {
   height: 10vh;
   width: auto;
+}
+.diver {
+  opacity: 0;
 }
 /* FREEDVIER */
 
@@ -440,7 +449,7 @@ p {
   animation-duration: 5s;
   transform-origin: bottom center;
   transform-style: preserve-3D;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 
   /* animation-iteration-count: 1; */
 }
@@ -460,7 +469,9 @@ p {
   transform: scaleX(-1);
   width: auto;
 }
-
+.freedivver {
+  opacity: 0;
+}
 .freediver .textbox {
   opacity: 0;
 }
@@ -469,7 +480,7 @@ p {
   animation-duration: 2s;
   transform-origin: bottom center;
   transform-style: preserve-3D;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 @keyframes freediverbox {
@@ -486,20 +497,22 @@ p {
   width: max-content;
   position: relative;
 }
-
+.squid {
+  opacity: 0;
+}
 .ani_squid {
   animation: squid ease-out forwards;
   animation-duration: 10s;
   transform-origin: right center;
   animation-iteration-count: 2;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 @keyframes squid {
-  0%,
-  100% {
+  0% {
     transform: translatex(-10vw) rotate(90deg) scale(1);
     filter: invert(100%) sepia(95%) saturate(412%) hue-rotate(301deg)
       brightness(111%) contrast(87%);
+    opacity: 0.5;
   }
   20% {
     transform: translatex(-5vw) rotate(90deg) scale(1.2);
@@ -510,6 +523,7 @@ p {
     transform: translatex(0vw) rotate(45deg) scale(1);
     filter: invert(99%) sepia(14%) saturate(6817%) hue-rotate(177deg)
       brightness(101%) contrast(92%);
+    opacity: 1;
   }
   40% {
     transform: translatex(0vw) rotate(0deg) scale(1);
@@ -536,19 +550,28 @@ p {
     filter: invert(99%) sepia(14%) saturate(6817%) hue-rotate(177deg)
       brightness(101%) contrast(92%);
   }
+  100% {
+    transform: translatex(-10vw) rotate(90deg) scale(1);
+    filter: invert(100%) sepia(95%) saturate(412%) hue-rotate(301deg)
+      brightness(111%) contrast(87%);
+  }
 }
+
 .squid img {
   height: 15vh;
   width: auto;
   margin-left: 35vw;
   transform: rotate (45deg);
 }
+.boxsquid {
+  opacity: 0;
+}
 .ani_boxsquid {
   animation: boxsquid ease-out forwards;
   animation-duration: 3s;
   transform-origin: right center;
   margin-left: 20vw;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 @keyframes boxsquid {
   0% {
@@ -581,18 +604,24 @@ p {
   animation-duration: 5s;
   transform-origin: bottom center;
   transform-style: preserve-3D;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .angler {
   display: flex;
   justify-content: flex-end;
+  opacity: 0;
 }
 @keyframes angler {
   0% {
     transform: translatex(-10vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     transform: translatex(12vw);
+    opacity: 1;
   }
 }
 
@@ -621,28 +650,33 @@ p {
   100% {
     background-color: rgb(226, 245, 157);
     transform: scale(0.9);
+    opacity: 1;
   }
   25% {
     background-color: yellow;
     transform: scale(1);
     box-shadow: 2px 2px 8px #e6ff33;
+    opacity: 1;
   }
   50% {
     background-color: rgb(226, 245, 157);
     transform: scale(0.9);
+    opacity: 1;
   }
   75% {
     background-color: yellow;
     transform: scale(1);
     box-shadow: 2px 2px 8px #e6ff33;
+    opacity: 1;
   }
 }
-
+.boxangler {
+  opacity: 0;
+}
 .ani_boxangler {
   animation: boxangler ease-out forwards;
   animation-duration: 3s;
-  animation-delay: 0.5s;
-
+  animation-delay: 1s;
   transform-origin: right center;
   margin-left: 20vw;
 }
@@ -650,9 +684,11 @@ p {
 @keyframes boxangler {
   0% {
     transform: translateX(15vw);
+    opacity: 0;
   }
   100% {
     transform: translateX(0vw);
+    opacity: 1;
   }
 }
 
@@ -690,6 +726,9 @@ h3 {
   animation-duration: 2s;
   transform-origin: center;
   animation-delay: 0.2s;
+}
+.boxangler h2 {
+  text-align: left;
 }
 @keyframes title {
   0% {
