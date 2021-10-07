@@ -241,7 +241,19 @@ p {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-
+/* COUNTER */
+#counter {
+  width: 20vmin;
+  height: 10vmin;
+  border: white solid 2px;
+  position: fixed;
+  top: 20 vh;
+  left: 0;
+  font-size: 2rem;
+}
+#counter h3 {
+  opacity: 1;
+}
 /* SPERM */
 .tenn {
   display: flex;
@@ -362,6 +374,7 @@ p {
 }
 .boxsperm_wrapper {
   position: relative;
+  margin-left: 3vw;
 }
 .ani_boxsperm {
   animation: boxsperm ease-out forwards;
